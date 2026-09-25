@@ -1,0 +1,342 @@
+/* Main Login / Signup Page */
+
+.auth-page {
+  min-height: 100vh;
+  background: #171717;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+
+/* Login / Signup Card */
+
+.auth-card {
+  width: 400px;
+
+  padding: 40px;
+
+  background: #202020;
+
+  border: 1px solid #B49754;
+
+  border-radius: 14px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Restaurant Name */
+
+.auth-card h1 {
+  color: #D8CBB5;
+
+  text-align: center;
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+}
+
+
+/* Login Heading */
+
+.auth-card h2 {
+  color: #D8CBB5;
+
+  text-align: center;
+
+  font-size: 24px;
+
+  margin-bottom: 8px;
+}
+
+
+/* Subtitle */
+
+.auth-subtitle {
+  color: #D8CBB5;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  margin-bottom: 28px;
+
+  opacity: 0.8;
+}
+
+
+/* Form */
+
+.auth-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* Input Container */
+
+.input-box {
+  position: relative;
+
+  width: 100%;
+}
+
+
+/* Input Icon */
+
+.input-icon {
+  position: absolute;
+
+  left: 14px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #B49754;
+
+  font-size: 16px;
+}
+
+
+/* Input */
+
+.input-box input {
+  width: 100%;
+
+  padding: 13px 15px 13px 42px;
+
+  background: transparent;
+
+  color: #D8CBB5;
+
+  border: 1px solid #B49754;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  font-size: 14px;
+}
+
+
+/* Placeholder */
+
+.input-box input::placeholder {
+  color: #D8CBB5;
+
+  opacity: 0.7;
+}
+
+
+/* Input Focus */
+
+.input-box input:focus {
+  border-color: #D8CBB5;
+}
+
+
+/* Login Button */
+
+.login-btn {
+  width: 100%;
+
+  padding: 13px;
+
+  margin-top: 5px;
+
+  background: #B49754;
+
+  color: #171717;
+
+  border: 1px solid #B49754;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+
+/* Login Button Hover */
+
+.login-btn:hover {
+  background: #D8CBB5;
+
+  border-color: #D8CBB5;
+}
+
+
+/* Divider */
+
+.divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 25px 0 15px;
+
+  color: #D8CBB5;
+}
+
+
+/* Divider Lines */
+
+.divider::before,
+.divider::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #B49754;
+}
+
+
+/* OR */
+
+.divider span {
+  font-size: 12px;
+
+  color: #D8CBB5;
+}
+
+
+/* Continue With */
+
+.continue-text {
+  text-align: center;
+
+  color: #D8CBB5;
+
+  font-size: 14px;
+
+  margin-bottom: 15px;
+}
+
+
+/* Social Buttons */
+
+.social-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+
+/* Social Button */
+
+.social-btn {
+  flex: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 11px 8px;
+
+  background: transparent;
+
+  color: #D8CBB5;
+
+  border: 1px solid #B49754;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+
+/* Social Hover */
+
+.social-btn:hover {
+  background: #B49754;
+
+  color: #171717;
+}
+
+
+/* Sign Up / Login Link */
+
+.auth-link {
+  text-align: center;
+
+  margin-top: 25px;
+
+  color: #D8CBB5;
+
+  font-size: 14px;
+}
+
+
+/* Link */
+
+.auth-link a {
+  color: #B49754;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+
+/* Link Hover */
+
+.auth-link a:hover {
+  color: #D8CBB5;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+
+  .auth-page {
+    padding: 20px;
+  }
+
+  .auth-card {
+    width: 100%;
+
+    padding: 30px 22px;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+}
+.error-message {
+  color: #B49754;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
