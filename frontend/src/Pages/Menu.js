@@ -19,7 +19,7 @@ export default function Menu() {
 
   // Get menu data from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/menu")
+    fetch("https://fresh-feast-44yj.vercel.app/api/menu")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch menu");
